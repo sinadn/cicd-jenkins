@@ -54,9 +54,9 @@
 	<distributionManagement>
 		<repository>
 			<uniqueVersion>false</uniqueVersion>
-			<id>nexus-cicd</id>
-			<name>nexus-cicd</name>
-			<url>http://localhost:8081/repository/nexus-cicd/</url>
+			<id>maven-releases</id>
+			<name>maven-releases</name>
+			<url>http://localhost:8081/repository/maven-releases/</url>
 		</repository>
 	</distributionManagement>
 
