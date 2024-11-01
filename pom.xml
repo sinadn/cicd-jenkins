@@ -76,7 +76,7 @@
 			<uniqueVersion>false</uniqueVersion>
 			<id>cicd-jenkins</id>
 			<name>cicd-jenkins</name>
-			<url>http://localhost:8081/repository/maven-releases/</url>
+			<url>http://localhost:8081/repository/cicd-jenkins/</url>
 		</repository>
 	</distributionManagement>
 </project>
