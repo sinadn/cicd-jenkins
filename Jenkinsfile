@@ -7,7 +7,7 @@ pipeline {
 
   tools {
         // Use Java 8 for the build
-        jdk 'Java8'
+         jdk 'openjdk11'
     }
 
 	stages {
