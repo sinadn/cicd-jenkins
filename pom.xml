@@ -49,16 +49,11 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+
 	</dependencies>
 
-	<distributionManagement>
-		<repository>
-			<uniqueVersion>false</uniqueVersion>
-			<id>maven-releases</id>
-			<name>maven-releases</name>
-			<url>http://localhost:8081/repository/maven-releases/</url>
-		</repository>
-	</distributionManagement>
+
 
 	<build>
 		<plugins>
@@ -75,6 +70,13 @@
 				</configuration>
 			</plugin>
 		</plugins>
-		<finalName>nexus-cicd</finalName>
 	</build>
+	<distributionManagement>
+		<repository>
+			<uniqueVersion>false</uniqueVersion>
+			<id>cicd-jenkins</id>
+			<name>cicd-jenkins</name>
+			<url>http://localhost:8081/repository/maven-releases/</url>
+		</repository>
+	</distributionManagement>
 </project>
