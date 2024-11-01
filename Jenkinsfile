@@ -5,32 +5,26 @@ pipeline {
 		mavenHome = tool 'jenkins-maven'
 	}
 
-
+  tools {
+        // Use Java 8 for the build
+        jdk 'Java8'
+    }
 
 	stages {
 
 		stage('Build'){
-			tools {
-        		jdk 'java-17'
-        	}
 			steps {
 				bat "mvn clean install -DskipTests"
 			}
 		}
 
 		stage('Test'){
-			tools {
-        		jdk 'java-17'
-        	}
 			steps{
 				bat "mvn test"
 			}
 		}
 
 		stage('Deploy') {
-			tools {
-        		jdk 'java-17'
-        	}
 			steps {
 			    bat "mvn jar:jar deploy:deploy"
 			}
