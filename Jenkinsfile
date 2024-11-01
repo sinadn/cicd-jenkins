@@ -5,10 +5,10 @@ pipeline {
 		mavenHome = tool 'jenkins-maven'
 	}
 
-  tools {
-        // Use Java 8 for the build
-         jdk 'openjdk11'
-    }
+//   tools {
+//         // Use Java 8 for the build
+//          jdk 'openjdk11'
+//     }
 
 	stages {
 
